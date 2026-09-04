@@ -30,7 +30,7 @@ body{
   overflow-x:hidden;
 }
 
-
+/* subtle grain so it doesnt look too flat ykwim */
 body::after{
   content:"";
   position:fixed;
@@ -54,6 +54,7 @@ a:focus-visible{
 }
 
 
+/* thin frame around the page yuah */
 .frame{
   position:fixed;
   inset:14px;
@@ -91,6 +92,7 @@ a:focus-visible{
 .frame .br::after{ bottom:0; right:0; }
 
 
+/* nav */
 .navbar{
   position:fixed;
   top:0; left:0; right:0;
@@ -134,6 +136,7 @@ a:focus-visible{
 .menu a:hover{ color:var(--rose); }
 
 
+/* hero with the flower bg yessir*/
 .hero{
   position:relative;
   min-height:100vh;
@@ -173,6 +176,7 @@ a:focus-visible{
 }
 
 
+/* about +  te projects sections */
 .about, .projects{
   position:relative;
   padding: 160px calc(6% + 14px) 140px;
@@ -200,7 +204,7 @@ a:focus-visible{
   margin-bottom:70px;
 }
 
-
+/* soft glow behind sections w */
 .about::before, .projects::before{
   content:"";
   position:absolute;
@@ -260,6 +264,7 @@ a:focus-visible{
 }
 
 
+/* project boex yuh*/
 .empty-frame{
   position:relative;
   min-height:280px;
@@ -305,6 +310,7 @@ a:focus-visible{
   0%,100%{ opacity:0.45; }
   50%{ opacity:0.85; }
 }
+
 
 
 @media (max-width: 860px){
